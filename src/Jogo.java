@@ -78,7 +78,6 @@ public class Jogo {
                 case 3:
                     solver.resolver(tabuleiro, 0, 0);
                     System.out.println("Jogo resolvido com sucesso!");
-                    tabuleiro.imprimir_tabuleiro();
                     System.out.println();
                     break;
             }
