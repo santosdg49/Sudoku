@@ -65,6 +65,17 @@ public class Jogo {
                     coluna = sc.nextInt();
                     System.out.println();
 
+                    while(!tabuleiro.Valido(numero, linha, coluna)) {
+                        System.out.println("posição inválida!");
+                        System.out.print("Insira o numero novamente: ");
+                        numero = sc.nextInt();
+                        System.out.print("Insira a linha: ");
+                        linha = sc.nextInt();
+                        System.out.print("Insira a coluna: ");
+                        coluna = sc.nextInt();
+                        System.out.println();
+                    }
+
                     tabuleiro.setValorUsuario(linha, coluna, numero);
                     tabuleiro.imprimir_tabuleiro();
                     System.out.println();
@@ -115,6 +126,17 @@ public class Jogo {
                     System.out.print("Insira a coluna: ");
                     coluna = sc.nextInt();
                     System.out.println();
+
+                    while(!tabuleiro.Valido(numero, linha, coluna)) {
+                        System.out.println("posição inválida!");
+                        System.out.print("Insira o numero novamente: ");
+                        numero = sc.nextInt();
+                        System.out.print("Insira a linha: ");
+                        linha = sc.nextInt();
+                        System.out.print("Insira a coluna: ");
+                        coluna = sc.nextInt();
+                        System.out.println();
+                    }
 
                     tabuleiro.setValorUsuario(linha, coluna, numero);
                     tabuleiro.imprimir_tabuleiro();
